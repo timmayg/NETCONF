@@ -7,10 +7,13 @@
       <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
         <mka>
           <policy xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mka">
+            <!-- THE NAME BELOW IS THE MKA POLICY NAME, USE A NAME THAT MEETS YOUR REQUIREMENTS -->
             <name>MKAPOLICY-G1-0-4</name>
+            <-- THE CIPHER SUITE BELOW IS CONFIGURED TO USE AES256, YOU CAN ALSO USE AES128 -->
             <macsec-cipher-suite>gcm-aes-256</macsec-cipher-suite>
             <sak-rekey>
               <interval>
+                <!-- THE TIME BELOW IS THE ADMIN CONFIGURED SAK REKEY, USE A TIMER THAT MEETS YOUR REQUIREMENTS -->
                 <time>600</time>
               </interval>
             </sak-rekey>

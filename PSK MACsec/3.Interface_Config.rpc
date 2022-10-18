@@ -6,7 +6,9 @@
     <config>
       <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
         <interface>
+          <!-- BELOW IS FOR GIGABIT INTERFACE, USE THE INTERFACE SPEED THAT MEETS YOUR ENVIRONMENT -->
           <GigabitEthernet>
+            <!-- USE THE INTERFACE NUMBER THAT MEETS YOUR REQUIREMENTS -->
             <name>1/0/4</name>
             <macsec-option xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-switch">
               <macsec>
@@ -16,10 +18,12 @@
             <srr-queue xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-switch" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="merge"/>
             <mka xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mka">
               <policy>
+                <!-- BE SURE TO USE THE MKA POLICY THAT YOU CREATED -->
                 <name>MKAPOLICY-G1-0-4</name>
               </policy>
               <pre-shared-key>
                 <key-chain>
+                  <!!-- BE SURE TO USE THE KEY CHAIN NAME THAT YOU CREATED -->
                   <name>RESTCONF-KEY</name>
                 </key-chain>
               </pre-shared-key>

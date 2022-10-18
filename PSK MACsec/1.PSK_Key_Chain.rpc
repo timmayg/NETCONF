@@ -7,13 +7,17 @@
       <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
         <key>
           <chain xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-crypto">
+            <!-- THE NAME LINE BELOW SHOULD BE CHANGED TO REFLECT THE NAME OF THE KEY CHAIN -->
             <name>RESTCONF-KEY</name>
             <macsec/>
             <key>
+              <!-- THE ID BELOW IS THE CKN, THIS SHOULD BE CHANGED TO MEET YOUR REQUIREMENTS --> 
               <id>9999</id>
               <cryptographic-algorithm>aes-256-cmac</cryptographic-algorithm>
               <key-string>
                 <encryption>0</encryption>
+                <!-- THE KEY BELOW IS THE CAK, THIS SHOULD BE CHANGED TO REFLECT THE CKN YOU WISH TO USE --> 
+                <!-- THIS IS A 64 BIT CAK AND SHOULD BE USED WITH AES256, USE 32 BITS WITH AES128 -->
                 <key>9999999999999999999999999999999999999999999999999999999999999999</key>
               </key-string>
             </key>
