@@ -13,6 +13,8 @@ In this RPC:
 * the CKN is 9999.  You can change this however the CKN needs to be an even number
 * the CAK is 64 bits of 9's.   AES128 requires 32 bits and AES256 requires 64 bits. This needs to be in hex characters. 
 
+![]
+
 
 ## 2. MKA\ MACsec Key Agreement Config
 This RPC file will create the MKA Policy.
