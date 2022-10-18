@@ -1,0 +1,25 @@
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="101">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+        <key>
+          <chain xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-crypto">
+            <name>RESTCONF-KEY</name>
+            <macsec/>
+            <key>
+              <id>9999</id>
+              <cryptographic-algorithm>aes-256-cmac</cryptographic-algorithm>
+              <key-string>
+                <encryption>0</encryption>
+                <key>9999999999999999999999999999999999999999999999999999999999999999</key>
+              </key-string>
+            </key>
+          </chain>
+        </key>
+      </native>
+    </config>
+  </edit-config>
+</rpc>
