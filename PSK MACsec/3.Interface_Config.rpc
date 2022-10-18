@@ -1,0 +1,32 @@
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="101">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+        <interface>
+          <GigabitEthernet>
+            <name>1/0/4</name>
+            <macsec-option xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-switch">
+              <macsec>
+                <network-link/>
+              </macsec>
+            </macsec-option>
+            <srr-queue xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-switch" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="merge"/>
+            <mka xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mka">
+              <policy>
+                <name>MKAPOLICY-G1-0-4</name>
+              </policy>
+              <pre-shared-key>
+                <key-chain>
+                  <name>RESTCONF-KEY</name>
+                </key-chain>
+              </pre-shared-key>
+            </mka>
+          </GigabitEthernet>
+        </interface>
+      </native>
+    </config>
+  </edit-config>
+</rpc>
