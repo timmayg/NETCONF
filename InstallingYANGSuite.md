@@ -9,28 +9,30 @@ https://github.com/vmware/photon/wiki/Downloading-Photon-OS
 
 2.	Login to PhotonOS
 
-      * Username: root
+      a. Username: root
 
-      * Password: changeme
+      b.  Password: changeme
 
 
 3.	By default Photon is configured for DHCP. Let’s setup a static IP address. 
 
-#Edit Network config File
+      a. Edit Network config File
+
+```
 vi /etc/systemd/network/99-dhcp-en.network
+```
 
-
-a.	Config Static IP
+b.	Config Static IP
 
 ```
 [Match]
 Name=e*
 
 [Network]
-Address=192.168.10.46/24
-Gateway=192.168.10.1
-DNS=192.168.10.12,192.168.10.14
-Domains=theglens.net
+Address=10.100.100.100/24
+Gateway=10.100.100.1
+DNS=1.1.1.1,8.8.8.8
+Domains=YOUR-DOMAIN.NAME
 NTP=pool.ntp.org
 ```
 
