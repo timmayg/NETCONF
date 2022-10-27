@@ -1,0 +1,20 @@
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="101">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+        <ip>
+          <ssh>
+            <pubkey-chain>
+              <username>
+                <name>my-4096rsa-ssh-key</name>
+              </username>
+            </pubkey-chain>
+          </ssh>
+        </ip>
+      </native>
+    </config>
+  </edit-config>
+</rpc>
