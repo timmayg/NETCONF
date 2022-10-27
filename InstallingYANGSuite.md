@@ -1,12 +1,12 @@
 # Down and Dirty Install of Cisco YANG Suite 
 
 
-1.	Download Photon OS from GitHub. I choose to use the OVA and just install it on my ESXi Host.
+* Download Photon OS from GitHub. I choose to use the OVA and just install it on my ESXi Host.
 
 https://github.com/vmware/photon/wiki/Downloading-Photon-OS
 
 
-2.	Login to PhotonOS
+* Login to PhotonOS
 
       * Username: root
       *  Password: changeme
