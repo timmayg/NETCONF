@@ -2,16 +2,16 @@
 
 
 
-1.	Download Photon OS from GitHub
+1.	Download Photon OS from GitHub. I choose to use the OVA and just install it on my ESXi Host.
 
 https://github.com/vmware/photon/wiki/Downloading-Photon-OS
 
 
-2.	Login 
+2.	Login to PhotonOS
 
-      a. Username: root
+      * Username: root
 
-      b. Password: changeme
+      * Password: changeme
 
 
 3.	By default Photon is configured for DHCP. Let’s setup a static IP address. 
