@@ -20,7 +20,7 @@ https://github.com/vmware/photon/wiki/Downloading-Photon-OS
 
 ```
 vi /etc/systemd/network/99-dhcp-en.network
-```
+'''
 
       b. Config Static IP
 
