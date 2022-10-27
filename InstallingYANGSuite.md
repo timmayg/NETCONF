@@ -3,7 +3,8 @@
 
 
 1.	Download Photon OS from GitHub
-https://github.com/vmware/photon/wiki/Downloading-Photon-OS
+
+(https://github.com/vmware/photon/wiki/Downloading-Photon-OS)
 
 2.	Login 
  a.	Username: root
@@ -18,6 +19,7 @@ vi /etc/systemd/network/99-dhcp-en.network
 
 a.	Config Static IP
 
+```
 [Match]
 Name=e*
 
@@ -27,6 +29,7 @@ Gateway=192.168.10.1
 DNS=192.168.10.12,192.168.10.14
 Domains=theglens.net
 NTP=pool.ntp.org
+```
 
 b.	:wq  out of vi
 
