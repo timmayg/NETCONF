@@ -1,3 +1,4 @@
+NOTE: The steps here are accurate but Im still learning Git markdown so please bear with me as I finalize the formatting of this document. 
 # Down and Dirty Install of Cisco YANG Suite 
 
 
