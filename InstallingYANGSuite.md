@@ -4,10 +4,13 @@
 
 1.	Download Photon OS from GitHub
 
-(https://github.com/vmware/photon/wiki/Downloading-Photon-OS)
+https://github.com/vmware/photon/wiki/Downloading-Photon-OS
+
 
 2.	Login 
+
  a.	Username: root
+
  b.	Password: changeme
 
 
