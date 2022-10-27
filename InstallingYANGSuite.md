@@ -13,16 +13,16 @@ https://github.com/vmware/photon/wiki/Downloading-Photon-OS
       b.  Password: changeme
 
 
-3.	By default Photon is configured for DHCP. Let’s setup a static IP address. 
+3.	By default PhotonOS is configured for DHCP. Let’s setup a static IP address. 
 
-      a. Edit Network config File
+      a. Edit the PhotonOS Network config File
 
 
 ```
 vi /etc/systemd/network/99-dhcp-en.network
 ```
 
-      b. Config Static IP
+b. Config Static IP
 
 ```
 [Match]
