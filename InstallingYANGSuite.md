@@ -8,8 +8,8 @@ https://github.com/vmware/photon/wiki/Downloading-Photon-OS
 
 * Login to PhotonOS
 
-      * Username: root
-      *  Password: changeme
+      - Username: root
+      - Password: changeme
 
 
 3.	By default PhotonOS is configured for DHCP. Let’s setup a static IP address. 
