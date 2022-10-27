@@ -9,9 +9,9 @@ https://github.com/vmware/photon/wiki/Downloading-Photon-OS
 
 2.	Login 
 
- a.	Username: root
+      a. Username: root
 
- b.	Password: changeme
+      b. Password: changeme
 
 
 3.	By default Photon is configured for DHCP. Let’s setup a static IP address. 
